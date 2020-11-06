@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,MAAM","sources":["./src/index.ts"],"sourcesContent":["alert('just something here broski');\n"],"names":["alert"],"version":3,"file":"index.js.map"}

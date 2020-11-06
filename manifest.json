@@ -1,0 +1,15 @@
+{
+  "name": "Slack it to me",
+  "version": "0.1.0",
+  "description": "Customize your browser-based Slack experience with this handy dandy extension!",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "*.slack.com"],
+  "content_scripts": [{
+    "matches": ["*.slack.com"],
+    "js": ["dist/"]
+  }],
+  "browser_actions": {
+    "default_title": "Slack it to me",
+    "default_popup": "dist/index.html"
+  }
+}

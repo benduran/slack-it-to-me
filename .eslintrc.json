@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "consistent-return": "off",
+    "func-names": ["off"],
+    "import/extensions": ["error", "ignorePackages", { "js": "never", "jsx": "never", "ts": "never", "tsx": "never" }],
+    "no-empty-function": ["off"],
+    "no-useless-constructor": ["off"],
+    "@typescript-eslint/no-useless-constructor": ["error"],
+    "@typescript-eslint/no-empty-function": ["error"],
+    "import/prefer-default-export": ["off"],
+    "import/no-extraneous-dependencies": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/interactive-supports-focus": ["off"],
+    "max-len": ["error", 160],
+    "no-plusplus": ["off"],
+    "no-restricted-syntax": ["off"],
+    "no-unused-expressions": "off",
+    "no-unused-vars": "off",
+    // Warn on unused vars but don't block app rendering.
+    "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_"}],
+    "react/forbid-prop-types": ["off"],
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "react/jsx-one-expression-per-line": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/jsx-wrap-multilines": ["off"],
+    "react/no-unescaped-entities": ["off"],
+    // TypeScript covers typing of proptypes
+    "react/prop-types": ["off"],
+    "react/require-default-props": ["off"],
+    "prettier/prettier": [
+      "error", {
+        // Prettier default configuation overrides.
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "arrowParens": "avoid" ,
+        "trailingComma": "all" ,
+        // Note this is not the same behavior as eslint's "max-len":
+        // https://prettier.io/docs/en/options.html#print-width
+        "printWidth": 120
+      }, {
+        // eslint-plugin-prettier will pick up prettier configurations further up
+        // the tree:
+        // https://github.com/prettier/eslint-plugin-prettier/issues/339
+        "usePrettierrc": false
+      }
+    ]
+  }
+}
