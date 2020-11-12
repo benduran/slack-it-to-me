@@ -5,11 +5,11 @@
   "manifest_version": 2,
   "permissions": ["activeTab", "*.slack.com"],
   "content_scripts": [{
-    "matches": ["*.slack.com"],
-    "js": ["dist/"]
+    "matches": ["https://*.slack.com/*"],
+    "js": ["{{jsBundleFileName}}"]
   }],
   "browser_actions": {
     "default_title": "Slack it to me",
-    "default_popup": "dist/index.html"
+    "default_popup": "index.html"
   }
 }
