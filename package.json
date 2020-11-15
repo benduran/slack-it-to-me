@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.126",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
+    "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.22.0",
@@ -28,11 +32,14 @@
   },
   "scripts": {
     "clean": "rimraf ./dist",
-    "build:parcel": "parcel build --out-dir ./dist --public-url \"./\" ./public/slack-it-to-me.html",
-    "prepare:manifest": "node ./prepareManifest.js",
-    "build": "run-s clean build:parcel prepare:manifest",
-    "start:parcel": "parcel serve ./public/slack-it-to-me.html",
-    "start": "run-s clean start:parcel"
+    "build:parcel:content": "parcel build --out-dir ./dist --public-url \"./\" src/content/slack-it-to-me-content.tsx",
+    "build:parcel:background": "parcel build --out-dir ./dist --public-url \"./\" src/background/slack-it-to-me-background.ts",
+    "prepare:files": "node ./prepareFiles.js",
+    "build:content": "run-s build:parcel:content prepare:files",
+    "build:background": "run-s build:parcel:background prepare:files",
+    "build": "run-s clean build:content build:background",
+    "start:parcel:content": "parcel serve ./public/slack-it-to-me.html",
+    "start:content": "run-s clean start:parcel:content"
   },
   "browserslist": {
     "production": [

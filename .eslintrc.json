@@ -15,7 +15,8 @@
   "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "chrome": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

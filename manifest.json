@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "description": "Customize your browser-based Slack experience with this handy dandy extension!",
   "manifest_version": 2,
-  "permissions": ["activeTab", "*.slack.com"],
+  "permissions": ["activeTab"],
   "content_scripts": [{
     "matches": ["https://*.slack.com/*"],
-    "js": ["{{jsBundleFileName}}"]
+    "js": ["{{contentScript}}"]
   }],
-  "browser_actions": {
-    "default_title": "Slack it to me",
-    "default_popup": "index.html"
+  "background": {
+    "scripts": ["{{backgroundScript}}"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
   }
 }
