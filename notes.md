@@ -33,7 +33,7 @@
   --sk_inverted_foreground: 255, 255, 255; // ??
   --sk_inverted_background: 29, 28, 29; // ??
   --sk_foreground_max: 29, 28, 29;
-  --sk_foreground_high: 29, 28, 29;
+  --sk_foreground_high: 29, 28, 29; // Primarily border colors around textboxes for threads
   --sk_foreground_low: 29, 28, 29;
   --sk_foreground_min: 29, 28, 29;
   --sk_foreground_max_solid: 97, 96, 97;
