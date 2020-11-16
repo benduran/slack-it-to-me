@@ -20,12 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9fef9-f58c-449e-ae13-5e8cac8c59e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/content/components/ColorPicker/ColorPicker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/components/ColorPicker/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/slack/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/slack/vars.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/components/Popover/Popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/components/Popover/Popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/theme/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/theme/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,8 +57,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="ts.external.directory.path" value="C:\Users\strat\Documents\dev\windows\opensource\slack-it-to-me\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -55,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605399144661</updated>
       <workItem from="1605399146378" duration="417000" />
+      <workItem from="1605483673422" duration="5337000" />
     </task>
     <servers />
   </component>
@@ -71,11 +93,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2543" y="400" width="672" height="678" key="search.everywhere.popup" timestamp="1605399239651">
+    <state x="2380" y="467" key="SettingsEditor" timestamp="1605489991596">
       <screen x="0" y="40" width="3840" height="1560" />
     </state>
-    <state x="2543" y="400" width="672" height="678" key="search.everywhere.popup/0.40.3840.1560@0.40.3840.1560" timestamp="1605399239651" />
+    <state x="2380" y="467" key="SettingsEditor/0.40.3840.1560@0.40.3840.1560" timestamp="1605489991596" />
+    <state x="2543" y="400" width="672" height="678" key="search.everywhere.popup" timestamp="1605490362754">
+      <screen x="0" y="40" width="3840" height="1560" />
+    </state>
+    <state x="2543" y="400" width="672" height="678" key="search.everywhere.popup/0.40.3840.1560@0.40.3840.1560" timestamp="1605490362754" />
   </component>
 </project>

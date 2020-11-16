@@ -2227,7 +2227,7 @@ cssstyle@^1.1.1:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.5.2:
+csstype@^2.5.1, csstype@^2.5.2:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.14.tgz#004822a4050345b55ad4dcc00be1d9cf2f4296de"
   integrity sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
@@ -2236,6 +2236,13 @@ csstype@^3.0.2:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.5.tgz#7fdec6a28a67ae18647c51668a9ff95bb2fa7bb8"
   integrity sha512-uVDi8LpBUKQj6sdxNaTetL6FpeCqTjOvAQuQUa/qAqq8oOd4ivkbhgnqayl0dnPal8Tb/yB1tF+gOvCBiicaiQ==
+
+csx@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/csx/-/csx-10.0.1.tgz#1b94a8297fb9f2a5c158e277a0961a5841d7ea18"
+  integrity sha512-eiumhK/Ke6KpcuaGqCcdfEW+M1R7dJBdsSeQaUq2cVpHXGe3WIQVEL7tlWUmgZlILGdPi7MqrbwXADmZg+uQgA==
+  dependencies:
+    csstype "^2.5.1"
 
 damerau-levenshtein@^1.0.6:
   version "1.0.6"
